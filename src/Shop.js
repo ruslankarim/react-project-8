@@ -69,7 +69,7 @@ export default function Shop() {
   }
 
   return (
-    <>
+    <div className="grid grid-cols-1 gap-4 text-center">
       <AddItem
         name={name}
         desc={desc}
@@ -80,6 +80,6 @@ export default function Shop() {
       />
       <div>{items.length === 0 && <p>Добавьте первый товар</p>}</div>
       <ItemsList items={items} onDeleteClick={handleDeleteClick} />
-    </>
+    </div>
   );
 }
